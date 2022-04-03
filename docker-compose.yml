@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  server:
+    build: ./server
+    ports:
+      - 2222:2222
+    volumes:
+      - ./server/src:/var/www/project
+      - ./server/ssh:/etc/ssh
